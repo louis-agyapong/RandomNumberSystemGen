@@ -37,6 +37,14 @@ has less than 6 digits, leading zeroes will be added to make it a 6-digit number
 
 ### Explain how the algorithm works and state any limitations, if any. The explanation should include a brief overview of the process of generating a random number, the logic behind using either the binary, octal or hexadecimal system, and any potential issues or limitations that may arise during the implementation of the algorithm.
 
+There are a few potential limitations or issues to consider when implementing this algorithm.
+
+1. The range of possible generated numbers will be different depending on the chosen number system. For example, the
+   highest possible number in binary is 111111 (or 63 in decimal), while the highest possible number in hexadecimal is
+   FFFFFF (or 16,777,215 in decimal). This means that the algorithm will be biased towards generating smaller numbers in
+   binary and larger numbers in hexadecimal.
+2. Another potential issue is that the algorithm assumes that the input will always be one of the three supported number
+   systems. If the user inputs an invalid or unsupported system, the algorithm will not work as expected.
 
 
 
